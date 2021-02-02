@@ -1,0 +1,77 @@
+.form-container {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.input {
+  padding: 10px;
+  width: 280px;
+  margin: 10px;
+  border-radius: 5px;
+  outline: none;
+  border: none;
+}
+
+body {
+  background-image: url("./images/arch.jpg");
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  font-family: "Ubuntu", sans-serif;
+}
+
+.form {
+  display: grid;
+  place-items: center;
+  font-size: 1.1rem;
+  position: relative;
+}
+.form-body {
+  background-color: rgb(244, 244, 244, 0.8);
+  padding: 40px 10px;
+  border-radius: 0 0 10px 10px;
+  width: 100%;
+}
+.form-group {
+  margin: 1rem;
+}
+
+.form-heading {
+  border-radius: 10px 10px 0 0;
+  width: 100%;
+  padding: 10px 10px;
+  background-color: #00303f;
+  color: white;
+  text-align: center;
+}
+
+.btn-submit {
+  padding: 12px 50px;
+  border-radius: 10px;
+  border: none;
+  background-color: #00303f;
+  color: white;
+}
+
+.button-wrapper {
+  display: grid;
+  place-items: center;
+}
+
+@media screen and (max-width: 500px) {
+  .form {
+    width: 280px;
+    overflow-x: hidden;
+    border-radius: 10px 10px 10px 10px;
+  }
+
+  .form-body {
+    width: 100%;
+  }
+
+  .input {
+    width: 180px;
+  }
+}
